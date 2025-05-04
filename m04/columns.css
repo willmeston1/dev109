@@ -1,0 +1,26 @@
+body {
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: 90%;
+  margin: 0 auto;}
+#content {overflow: auto;}
+#nav, #feature, #footer {
+  margin: 1%;}
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;}
+.column3 {margin-right: 0%;}
+li {
+  display: inline;
+  padding: 0.5em;}
+#nav, #footer {
+  background-color: #efefef;
+  padding: 0.5em 0;}
+#feature, .article {
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;}
+#header {
+   font-family: 'Verdana';
+   font-weight: normal;
+   font-style: normal;}
