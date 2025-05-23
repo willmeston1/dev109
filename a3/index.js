@@ -4,10 +4,14 @@
 // var symbol ="*";
 
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
+upLeft (pHeight, pColorEven, pColorOdd, pSymbol);
 upRight(pHeight, pColorEven, pColorOdd, pSymbol);
+downLeft(pHeight, pColorEven,pColorOdd, pSymbol);
 downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
 }
+
+function upLeft (pHeight, pColorEven, pColorOdd, pSymbol){}
 
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
 var rLine ="";
@@ -32,6 +36,8 @@ rLine +="</p>";
 
 document.getElementById("upRight").innerHTML = rLine;
 }
+
+function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){}
 
 function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
 var rLine ="";
