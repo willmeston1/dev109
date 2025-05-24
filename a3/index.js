@@ -1,3 +1,4 @@
+
 // var rHeight =5;
 // var colorEven = "Light Blue";
 // var colorOdd = "Pink";
@@ -14,7 +15,7 @@ downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 function upLeft (pHeight, pColorEven, pColorOdd, pSymbol){
   var rLine ="";
   for (i=0;i<pHeight;i++){
-  rLine +="<p>";
+  rLine += "<p style='text-align:right;'>";
   for(j=0;j<=i;j++){
 
   if (j%2)
@@ -56,7 +57,7 @@ document.getElementById("upRight").innerHTML = rLine;
 function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
 var rLine ="";
 for (i=pHeight;i > 0;i--){
-rLine +="<p>";
+rLine += "<p style='text-align:right;'>";
 for(j=0;j<i;j++){
   
 if (j%2)
