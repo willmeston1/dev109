@@ -1,12 +1,33 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+  .container {
+    display: flex;
+  }
+  .box {
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+</style>
+
+<div class="container">
+  <div id="upLeft"></div>
+  <div id="upRight"></div>
+</div>
+  <div class="container">
+    <div id="downLeft"></div>
+    <div id="downRight"></div>
+  </div>
+  </style>
 <meta name="description" content="Week 6 - BC - Rhombus">
 <meta charset="utf-8">
 <title>JS Bin</title>
 </head>
 <body>
-<label>What is the size of Rhombus?</label><br>
+<label>What is the size of the rhombus?</label><br>
 <input type="text" id="rHeight" value="5" size="5">
 <br>
 <label>Choose color for Even position</label><br>
@@ -26,7 +47,7 @@
 <label>Choose symbol for Rhombus</label>
 <select id="symbol">
 <option value="*">*</option>
-<option value="$">$</option>
+<option value="#">#</option>
 <option value="@">@</option>
 </select>
 <br>
@@ -34,14 +55,12 @@
 document.getElementById('colorEven').value,
 document.getElementById('colorOdd').value,
 document.getElementById('symbol').value);">Display Rhombus</button>
-<div id="upLeft">Rhombus</div>
-<div id="upRight"></div>
+  <div id="upLeft"></div>
+  <div id="upRight"></div>
 <div id="downLeft"></div>
 <div id="downRight"></div>
 
 <script src="index.js"></script>
-
--->
 
 </body>
 </html>
