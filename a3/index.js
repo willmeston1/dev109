@@ -13,7 +13,7 @@ downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 }
 
 function upLeft (pHeight, pColorEven, pColorOdd, pSymbol){
-  var rLine ="";
+  var rLine = "<div style='border: 2px solid rgba(0, 0, 0, 0); padding: 6px; display: inline-block;'>";
   for (i=0;i<pHeight;i++){
   rLine += "<p style='text-align:right;'>";
   for(j=0;j<=i;j++){
@@ -26,28 +26,23 @@ function upLeft (pHeight, pColorEven, pColorOdd, pSymbol){
     
   rLine +="</p>";
   }
-  
+
   document.getElementById("upLeft").innerHTML = rLine;
   }
 
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
-var rLine ="";
+var rLine ="<div style='border: 2px solid rgba(0, 0, 0, 0); padding: 6px; display: inline-block;'>";
 for (i=0;i<pHeight;i++){
 rLine +="<p>";
-//Create each line on the Rhombus
 for(j=0;j<=i;j++){
 
-//Is the position even or odd so we change the color
 if (j%2)
-//even
 rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
 else
-//odd
 rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
 
 }
 rLine +="</p>";
-// console.log(rLine);
 
 }
 
@@ -55,7 +50,7 @@ document.getElementById("upRight").innerHTML = rLine;
 }
 
 function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
-var rLine ="";
+var rLine = "<div style='border: 2px solid rgba(0, 0, 0, 0); padding: 6px; display: inline-block;'>";
 for (i=pHeight;i > 0;i--){
 rLine += "<p style='text-align:right;'>";
 for(j=0;j<i;j++){
@@ -68,27 +63,24 @@ rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
 }
 rLine +="</p>";
 }
+
 document.getElementById("downLeft").innerHTML = rLine;
 }
 
 function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
-var rLine ="";
+var rLine ="<div style='border: 2px solid rgba(0, 0, 0, 0); padding: 6px; display: inline-block;'>";
 for (i=pHeight;i > 0;i--){
 rLine +="<p>";
-//Create each line on the Rhombus
 for(j=0;j<i;j++){
 
-//Is the position even or odd so we change the color
+
 if (j%2)
-//even
 rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
 else
-//odd
 rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
 
 }
 rLine +="</p>";
-// console.log(rLine);
 
 }
 
