@@ -41,7 +41,7 @@ function firstName(){
   //1) Create variable
 var validLastname=false;
 //2) read value from HTML
-var lastname = document.getElementById("lastname").value;
+var lastname = document.getElementById("LastName").value;
 
 //3) Do validation
     if (lastname==="null" || lastname==="" || lastname.length > 20 ) {
