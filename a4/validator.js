@@ -23,7 +23,7 @@ function firstName(){
         errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
         console.log("First name invalid — length")
         } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
-            errorMessages += "<p>Invalid caracter in first name (accepts only A-Z, a-z, and ,.'-)</p>";
+            errorMessages += "<p>Invalid character in first name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("First name invalid — bad characters")
         } else {
                 validFirstname = true;
@@ -34,7 +34,7 @@ function firstName(){
 
     //5) return status of each field
     return (validFirstname);
-};
+}
   
   LastName.addEventListener('blur', lastName, false);
   function lastName(){
@@ -48,7 +48,7 @@ var lastname = document.getElementById("LastName").value;
       errorMessages += "<p>The last name is required and cannot be greater than 20 characters</p>";
       console.log("Last name invalid - length")
     } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
-      errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+      errorMessages += "<p>Invalid character in last name (accepts only A-Z, a-z, and ,.'-)</p>";
       console.log("First name invalid — bad characters")
     } else {
       validLastname = true;
@@ -58,4 +58,19 @@ var lastname = document.getElementById("LastName").value;
        document.getElementById("lname").innerHTML = errorMessages;
 //5) return status of each field
 return (validLastname);
-  };
+  }
+
+//To do: Username error also shows up under Last Name text box
+  Username.addEventListener('blur', username, false);
+  function username(){
+    var validUsername = false;
+    var userName = document.getElementById("Username").value;
+    if (userName==="null" || userName==="" || userName.length > 12 ) {
+      errorMessages += "<p>Username is required and cannot be greater than 12 characters</p>";
+} else {
+  validUsername = true;
+  console.log ("Username valid")
+}
+    document.getElementById("username").innerHTML = errorMessages;
+    return (validUsername);
+  }
