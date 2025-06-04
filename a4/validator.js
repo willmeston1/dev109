@@ -57,5 +57,5 @@ var lastname = document.getElementById("LastName").value;
 //4) Send error message to HTML
        document.getElementById("lname").innerHTML = errorMessages;
 //5) return status of each field
-return (validFirstname && validLastname);
+return (validLastname);
   };
