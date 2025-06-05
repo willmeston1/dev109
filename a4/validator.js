@@ -1,3 +1,4 @@
+
 function isValid() {
     if (firstName() //&&
        // lastName()
@@ -52,18 +53,6 @@ var lastname = document.getElementById("LastName").value;
 return (validLastname);
   }
 
-Email.addEventListener('blur', email, false);
- function email() {
-   var userEmail = document.getElementById("email").value;
-var atpos = userEmail.indexOf("@");
-var dotpos = userEmail.lastIndexOf(".");
-if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
-    errorMessages += "<p>Invalid email</p>";
-} else {
-    return true;
- }
- }
-
 //To do: Remove [object HTMLCollection] text
   Username.addEventListener('blur', userName, false);
   function userName(){
@@ -77,4 +66,25 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
 }
     document.getElementById("username").innerHTML = errorMessages;
     return true;
+  }
+
+City.addEventListener('blur', city, false);
+  function city(){
+    var validCity = false;
+    var city = document.getElementById("City").value;
+    if (city==="null" || city==="") {
+     errorMessages += "<p>This field is required."
+    } else {
+      validCity = true;
+      console.log ("City valid")
+    }
+  }
+
+State.addEventListener('blur', state, false);
+  function state(){
+    var validState = false;
+    var state = document.getElementById("State").value;
+    if (state==="") {
+     errorMessages += "<p>This field is required."
+    }
   }
