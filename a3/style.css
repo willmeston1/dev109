@@ -1,1 +1,8 @@
-
+.container {
+    display: flex;
+  }
+  .box {
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
