@@ -1,4 +1,5 @@
-var myImages =["https://www.imms.org/images/dolphin_presentation/dolphin1.jpg", "http://cdn3.theeventchronicle.com/wp-content/uploads/2014/09/dolphin-intelligence.jpg","http://www.liveanimalslist.com/mammals/images/dolphin-in-water.jpg","http://i1151.photobucket.com/albums/o632/bowietvc15/Bowietvc15-2/DolphinsWallpaper2.jpg","http://i1151.photobucket.com/albums/o632/bowietvc15/funny%20gifs/animal-art-cute-dolphin-nature-Favimcom-311780.jpg"];
+
+var myImages =["https://cdn.pixabay.com/photo/2018/03/04/22/25/any-person-not-3199425_640.jpg", "https://thumbs.dreamstime.com/b/see-beautiful-white-flower-garden-selective-focus-see-beautiful-white-flower-garden-183588004.jpg","https://d3i5p6znmm9yua.cloudfront.net/360_Tiffin_Live/0/0/0/0/459/317/459317_1","http://i1151.photobucket.com/albums/o632/bowietvc15/Bowietvc15-2/DolphinsWallpaper2.jpg","http://i1151.photobucket.com/albums/o632/bowietvc15/funny%20gifs/animal-art-cute-dolphin-nature-Favimcom-311780.jpg"];
 
 
 var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
