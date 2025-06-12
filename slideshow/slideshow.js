@@ -3,7 +3,7 @@
 var myImages =["https://cdn.pixabay.com/photo/2018/03/04/22/25/any-person-not-3199425_640.jpg", "https://thumbs.dreamstime.com/b/see-beautiful-white-flower-garden-selective-focus-see-beautiful-white-flower-garden-183588004.jpg","https://d3i5p6znmm9yua.cloudfront.net/360_Tiffin_Live/0/0/0/0/459/317/459317_1","https://www.ocregister.com/wp-content/uploads/migration/kpj/kpjig2-b78458428z120090116150143000gddg5lo31lg.jpg?w=535","https://live.staticflickr.com/176/425906568_28fe424b7b_b.jpg"];
 
 
-var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
+var captionImages =["a sleeping fox","some flowers","an ant with parasitic mushrooms growing out of it","a screencap of the film 'Marley and Me'","a pepper"];
 
  var index=0; 
 
@@ -43,4 +43,4 @@ if (document.getElementById("auto").checked)
 }
 
 
-setInterval(autoSlide,5000); // Next
+setInterval(autoSlide,4000); // Next
