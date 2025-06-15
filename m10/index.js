@@ -1,3 +1,4 @@
+
 var  mybutton = document.querySelector("button");
 mybutton.addEventListener("click", function(event) {
 
@@ -18,3 +19,17 @@ event.stopPropagation();
     dot.style.top = (event.pageY - 4) + "px";
     document.body.appendChild(dot);
   });
+
+  function updateDot() {
+    let dot = document.querySelector(".dot");
+    let newColor = document.getElementById("color").value;
+    let newSize = document.getElementById("size").value + "px";
+
+    dot.style.backgroundColor = newColor;
+    dot.style.height = newSize;
+    dot.style.width = newSize;
+  }
+
+  // Event listeners to detect user input changes
+  document.getElementById("color").addEventListener("change", updateDot);
+  document.getElementById("size").addEventListener("input", updateDot);
